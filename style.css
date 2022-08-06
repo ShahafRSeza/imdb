@@ -1,0 +1,535 @@
+* {
+    font-family: effra, sans-serif;
+    font-weight: 300;
+    outline: none;
+}
+
+.page {
+    background-image: url(background.jpg);
+    background-size: cover;
+    font-weight: 300;
+    outline: none;
+}
+
+.welcome{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.msg {
+    height: 400px;
+    max-width: 900px;
+    background-image: radial-gradient(#1457c4, rgba(0, 0, 0, 0) 70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.welcome #pageP {
+    color: white;
+    font-size: 20pt;
+    margin-bottom: 0;
+}
+
+.welcome #pageP span {
+    color: #f4c518;
+    font-weight: 900;
+}
+
+#pageTitle {
+    font-weight: 300;
+    color: white;
+    margin-top: -5px;
+}
+
+#pageTitle span {
+    font-weight: 900;
+}
+
+.pageSearch {
+    width: 70%;
+    display: flex;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.4);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.pageSearch input {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-family: effra, sans-serif;
+}
+
+.pageSearch .fa-magnifying-glass {
+    margin: 15px;
+    color: #f4c518;
+}
+
+.pageSearch input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 1em;
+    width: 1em;
+    border-radius: 50em;
+    background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%;
+    background-size: contain;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .pageSearch input[type="search"]:focus::-webkit-search-cancel-button {
+    opacity: .7;
+    pointer-events: all;
+  }
+
+  footer {
+    background-color: #05133ada;
+    position: fixed;
+    bottom: -10px;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  footer p {
+    font-weight: 400;
+  }
+
+
+
+.site {
+    display: none;
+}
+
+
+.bg {
+    height: 400px;
+    background-image:
+    linear-gradient(to bottom, #1f70d39e, #0b1941),
+    url('');
+    background-size: cover;
+    background-position: center 20%;
+}
+
+nav {
+    background-color: #0b1941f1;
+    height: 70px;
+    float: left;
+    width: 100%;
+    color: white;
+    padding: 5px;
+}
+
+.logo {
+    padding: 6px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: inherit;
+}
+
+.logo h1 {
+    color: #f4c518;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.search {
+    display: flex;
+    border-radius: 5px;
+    height: 45px;
+    margin-top: 7px;
+    padding: 0;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.search:hover .searchBtn {
+    visibility: visible;
+}
+
+.searchBtn {
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 0 20px;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    visibility: visible;
+}
+
+.fa-magnifying-glass {
+    margin: 0 5px;
+}
+.searchBtn:hover {
+    background-color: #f4c518;
+}
+
+input {
+    margin-top: 3px;
+    margin-left: 5px;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    border-radius: 6px;
+    color: #f4c518;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 1em;
+    width: 1em;
+    border-radius: 50em;
+    background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%;
+    background-size: contain;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nosubmit {
+    border:none;
+    width: 100%;
+    margin-top: 12px;
+    padding-left: 8px;
+    display: inline;
+    width: 30px;
+}
+
+input::placeholder{
+    color: white
+}
+
+.tops10 {
+   text-align: right;
+   font-size: 20px;
+   padding: 10px;
+   margin-top: 5px;
+}
+
+.tops10 a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.tops10 .fa-solid {
+    color: white;
+    margin-right: 5px;
+}
+
+.tops10 a:hover .fa-solid, .tops10 a:hover {
+    color: #f4c518;
+}
+
+
+
+/***************/
+
+.container {
+    max-width: 1200px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto;
+    position: relative;
+    top: -100px;
+}
+
+main {
+    padding-left: 20px;
+}
+
+.poster img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.poster button {
+    margin-top: 10px;
+    border: 2px solid #f4c518;
+    background-color: transparent;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    color: #f4c518;
+    font-weight: 800;
+    letter-spacing: 2px;
+    transition: all 0.5s;
+}
+
+.poster button:hover{
+    background-color: #f4c518;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.hiddenStats {
+    display: none;
+}
+
+h1 {
+    color: white;
+    font-weight: 900;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-weight: 500;
+}
+
+.stats {
+    max-width: 100%;
+    align-items: left;
+    gap: 40px;
+    display: flex;
+}
+
+.year, .rating span, .runTime, .ratingNumber{
+    color: #f4c518;
+    margin-right: 10px;
+    font-weight: 300;
+}
+
+.stats .fa-solid {
+    color: #f4c518;
+}
+
+.fa-regular {
+    color: white;
+    opacity: 0.5;
+}
+
+.fa-calendar, .fa-clock, .fa-tv{
+    margin-right: 5px;
+    color: #f4c518;
+    opacity: 1;
+}
+
+.gener {
+    color: #f4c518;
+    display: flex;
+    justify-content: stretch;
+    list-style-type: none;
+    gap: 10px;
+}
+
+.gener li {
+    padding: 0.3rem 1rem;
+    border-radius: 4px;
+    border: 1px solid #f4c518;
+    text-transform: uppercase;
+    font-size: 10pt;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.gener li:hover {
+    color: #0b1941;
+    background-color: #f4c518;
+}
+
+
+/***************/
+
+.plot {
+    margin-top: 10px;
+}
+
+.stuff p {
+    margin-top: 10px;
+    font-weight: 900;
+    color: gray;
+    text-transform: uppercase;
+}
+
+.stuff p span{
+    color: black;
+    text-transform:capitalize;
+}
+
+
+.actor img{
+    clip-path: circle(50% at 50% 50%);
+    width: 100px;
+    height: 100px;
+    position: relative; 
+    object-fit:cover;
+    margin-bottom: 10px;
+}
+
+.actorName {
+    width: 100px;
+    text-align: center;
+}
+
+.actorName h3 {
+    font-size: 11pt;
+    margin-bottom: 0;
+}
+
+.actorName p {
+    font-size: 9pt;
+}
+
+
+/****/
+
+
+.similars {
+    position: relative;
+    top: -80px;
+}
+
+.movieBox {
+    cursor: pointer;
+}
+
+.similars h3 {
+    font-weight: 900;
+    font-size: 16pt;
+    color: gray;
+    text-transform: uppercase;
+}
+
+.similars img {
+    width: 200px;
+    max-height: 400px;
+    transition: 0.5s;
+}
+
+.similars h4 {
+    margin-top: 5px;
+}
+
+.similars p {
+    color: #f4c518;
+    font-weight: 900;
+}
+
+.similars .col:hover h4 {
+    color: #f4c518;
+}
+
+.similars .col:hover img {
+    opacity: 0.5;
+}
+
+.scrolling-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .loading {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0b1941e3;
+    z-index: 1;
+    visibility: hidden;
+  }
+  #loader{
+    position: fixed;
+    top: 45%;
+    left: 45%;
+    width: 150px;
+    height: 150px;
+    font-size: 5rem;
+    z-index: 100;
+    color: #f4c518;
+    visibility: hidden;
+}
+
+/****/
+
+/***/
+
+@media screen and (max-width: 600px) {
+
+    .welcome{
+        height: 100vh;
+    }
+
+    .page {
+        height: 100%;
+    }
+    .page #pageP {
+        font-size: 12pt;
+        margin-bottom: 10px;
+    }
+
+    #pageTitle {
+        font-size: 16pt;
+    }
+
+    #loader{
+        top: 40%;
+        left: 35%;
+    }
+
+    .logo {
+        padding: 10px 0;
+    }
+    .hidden {
+        display: block;
+        font-size: 24pt;
+    }
+
+    .search {
+        width: 65%;
+    }
+    main h1 {
+        display: none;
+    }
+    .grid { 
+        display: block;
+        top: -180px;
+    }
+
+    .hiddenStats {
+        display: flex;
+        gap: 20px;
+    }
+
+    .hiddenStats .fa-solid {
+        color: #f4c518;
+        margin-right: 5px;
+    }
+
+    .stats {
+        display: none;
+    }
+    .tops10 {
+        display: none;
+    }
+
+    main .row .col:last-child {
+        display: none;
+    }
+
+    .similars {
+        color: white;
+        background-color: #0b1941;
+        position: relative;
+        top: -150px;
+        padding: 20px 0 20px 20px;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .similars h3 {
+        color: #f4c518;
+        margin: 10px 0;
+        padding: 0 0 10px 0;
+    }
+  }
